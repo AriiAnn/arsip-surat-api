@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJpYXQiOjE2ODk1MjEyMTUsImV4cCI6MTY4OTUyMTI0NX0.8LwwrUin5j_QNySSB0nIICovbcSH2p36y61yEaQ5SHA
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ari",
+    "email": "ari@gmail.com",
+    "password": "ari",
+    "confPassword": "ari"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ari@gmail.com",
+    "password": "ari"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
